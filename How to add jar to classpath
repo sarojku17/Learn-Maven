@@ -1,0 +1,7 @@
+1. How to add jars to class path? 
+Ans: 
+    1. Directly moditying the CLASSPATH/classpath environment variable. (This environment variable is used by java and javaw to find the java binaries). 
+    2. Directly passing the .class files and jars using -classpath / -cp option while running the java applications. This is useful only when some jars
+       are required specific for an java app. wildcard (*) can also be used to include all jars in side a location to classpath.
+    3. Modifying  Class-Path  in manifiest file in META-INF sub-folder of jar. This method overrides the above 2 methods.
+   
